@@ -1,0 +1,7 @@
+C:\Users\qurpe\source\repos\ConsolePractice\ConsolePractice\bin\Debug\ConsolePractice.exe.config
+C:\Users\qurpe\source\repos\ConsolePractice\ConsolePractice\bin\Debug\ConsolePractice.exe
+C:\Users\qurpe\source\repos\ConsolePractice\ConsolePractice\bin\Debug\ConsolePractice.pdb
+C:\Users\qurpe\source\repos\ConsolePractice\ConsolePractice\obj\Debug\ConsolePractice.csproj.AssemblyReference.cache
+C:\Users\qurpe\source\repos\ConsolePractice\ConsolePractice\obj\Debug\ConsolePractice.csproj.CoreCompileInputs.cache
+C:\Users\qurpe\source\repos\ConsolePractice\ConsolePractice\obj\Debug\ConsolePractice.exe
+C:\Users\qurpe\source\repos\ConsolePractice\ConsolePractice\obj\Debug\ConsolePractice.pdb
