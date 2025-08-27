@@ -21,6 +21,8 @@ HistoryLogger.cs … 在庫操作履歴の保存・表示
 
 使い方
 
+起動ファイルは「Program.cs」です。
+
 アプリを実行すると、カレントディレクトリに products.txt がある場合は読み込みます。
 起動ファイルは「Program.cs」になります。VisualStudio上から起動してください。
 
