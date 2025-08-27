@@ -1,46 +1,57 @@
-簡単な在庫管理プログラムを組んでみました。
-（DB要素は取り入れていないのでsqlに関わる技術は取り入れていません）
+シンプルなコンソール在庫管理アプリケーションです。  
+C# で作成されており、商品追加・削除・入出庫・検索・ソート・履歴保存などが行えます。
 
-ConsolePractice 在庫管理アプリ
+---
 
-概要
+## 📦 機能
 
-C# コンソールアプリケーションで、商品の在庫を管理するプログラムです。
-商品の追加、削除、検索、ソート、在庫の入出庫、履歴の確認が可能です。
+- **商品追加 / 削除**  
+- **在庫の入庫 (add) / 出庫 (remove)**  
+- **商品検索**  
+  - 名前で検索  
+  - 在庫範囲で検索  
+  - 名前 + 在庫範囲の両方で検索  
+- **ソート**  
+  - 商品名順  
+  - 在庫数順  
+- **履歴の保存と表示**  
+  - `history.txt` に操作履歴を自動保存  
+- **データ保存**  
+  - `products.txt` に商品一覧を保存  
 
-ファイル構成
+---
 
-Program.cs … メイン処理とユーザー操作ループ
-Product.cs … 商品クラス (Name / Stock と在庫操作メソッド)
-Updater.cs … 新商品の追加
-Deleter.cs … 商品の削除
-Sorter.cs … 商品のソート（名前または在庫数）
-Searcher.cs … 商品の検索（名前・在庫範囲・両方）
-ProductFiler.cs … ファイルへの保存・読み込み
-HistoryLogger.cs … 在庫操作履歴の保存・表示
+## 🚀 実行方法
 
-使い方
+### Visual Studio から実行
+1. 本リポジトリをクローンまたは ZIP ダウンロードして展開  
+2. Visual Studio で `ConsolePractice/Program.cs` を開く  
+3. `F5` または 「デバッグ開始」で実行  
 
-起動ファイルは「Program.cs」です。
 
-アプリを実行すると、カレントディレクトリに products.txt がある場合は読み込みます。
-起動ファイルは「Program.cs」になります。VisualStudio上から起動してください。
+📂 ファイル構成
 
-コンソール上で操作を入力：
+ConsolePractice/
+├─ Program.cs        # メイン処理
+├─ Product.cs        # 商品クラス
+├─ Updater.cs        # 商品追加
+├─ Deleter.cs        # 商品削除
+├─ ProductFiler.cs   # 保存・読み込み
+├─ Sorter.cs         # ソート処理
+├─ Searcher.cs       # 検索処理
+├─ HistoryLogger.cs  # 履歴処理
+├─ products.txt      # 在庫データ保存ファイル
+└─ history.txt       # 履歴保存ファイル
+🛠 開発環境
+C# 10 / .NET 6
 
-add … 在庫追加
-remove … 在庫削除
-new … 新商品追加
-delete … 商品削除
-sort … 商品ソート
-search … 商品検索
-history … 在庫操作履歴表示
-exit … アプリ終了（products.txt に保存）
+Visual Studio 2022
 
-注意点
+✨ 今後の改善アイデア
+履歴のフィルタリング（商品ごと / 期間ごと）
 
-履歴は history.txt に保存されます。
+在庫数アラート機能（閾値を下回ったら通知）
 
-数値入力が必要な場合、正の整数を入力してください。
+ユニットテスト追加
 
-名前空間はすべて ConsolePractice に統一しています。
+GUI 版アプリケーション化（WPF / WinForms）
